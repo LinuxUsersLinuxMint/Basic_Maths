@@ -35,3 +35,15 @@ def Percentage(x,y):
     global result
     result=x%y
     print("result: {0} % {1} = {2}". format(x,y,result))
+def FullDivision(x,y):
+    x=x
+    y=y
+    global result
+    result=x//y
+    print("result: {0} // {1} = {2}". format(x,y,result))
+def TakingExponents(x,y):
+    x=x
+    y=y
+    global result
+    result=x ** y
+    print("result {0} ** {1} = {2}". format(x,y,result))
