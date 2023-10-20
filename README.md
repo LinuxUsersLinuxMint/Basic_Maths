@@ -20,3 +20,4 @@ Output: result: 5 + 5 = 10
 
 
 By: LinuxUsersLinuxMint
+Credits: gaurovgiri @gaurovgiri
