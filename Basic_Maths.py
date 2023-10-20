@@ -47,3 +47,14 @@ def TakingExponents(x,y):
     global result
     result=x ** y
     print("result {0} ** {1} = {2}". format(x,y,result))
+def TakingRoots(x,y):
+    x=x
+    y=y
+    global result
+    result=x ** (1/y)
+    print("result: {0} ** (1/{1}) = {2}". format(x,y,result))
+def SqaureRoot(x):
+    x=x
+    global result
+    result=x ** (1/2)
+    print("result: {0} ** (1/2) = {1}". format(x,result))
