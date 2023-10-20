@@ -19,5 +19,5 @@ addition(5,5)
 Output: result: 5 + 5 = 10
 
 
-By: LinuxUsersLinuxMint
-Credits: gaurovgiri @gaurovgiri
+* By: LinuxUsersLinuxMint
+* Credits: gaurovgiri @gaurovgiri
