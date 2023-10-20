@@ -5,6 +5,7 @@
 * Python da Matematik Temel 4 işlemi herhangi bir ek değişken gerektirmeden kullanabilmemizi sağlar
 Örnek:
 #!/usr/bin/python3
+from Basic_Maths import *
 addition(5,5)
 Çıktı: result: 5 + 5 = 10
 
@@ -13,6 +14,7 @@ addition(5,5)
 * Math Basic 4 in Python allows us to use operations without requiring any additional variables.
 Example:
 #!/usr/bin/python3
+from Basic_Maths import *
 addition(5,5)
 Output: result: 5 + 5 = 10
 
