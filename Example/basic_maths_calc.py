@@ -9,7 +9,7 @@ select=str(input('Select (Add, Ext, Mul, Div, Per, FullDiv, TakeEx): '))
 if select=="Add":
     addition(number1,number2)
 elif select=="Ext":
-    Extraction()
+    Extraction(number1,number2)
 elif select=="Mul":
     Multiplication(number1,number2)
 elif select=="Div":
