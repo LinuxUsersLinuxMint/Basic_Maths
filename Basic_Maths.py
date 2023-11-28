@@ -53,7 +53,7 @@ def TakingRoots(x,y,ResultDialog):
     global result
     result=x ** (1/y)
     print("{3} {0} ** (1/{1}) = {2}". format(x,y,result,ResultDialog))
-def SqaureRoot(x):
+def SqaureRoot(x,ResultDialog):
     x=x
     global result
     result=x ** (1/2)
