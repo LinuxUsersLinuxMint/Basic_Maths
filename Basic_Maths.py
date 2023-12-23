@@ -5,56 +5,49 @@ Basic_Maths All Rights Reserved under the GPL(General Public License).
 Bu Yazılımın Bir Kopyası GİTHUB da yayınlanmaktadır Görüntülemek için: https://github.com/LinuxUsersLinuxMint/LinuxUsersLinuxMint
 A Copy of This Software is published on GITHUB To view: https://github.com/LinuxUsersLinuxMint/LinuxUsersLinuxMint"""
 
+global result
+
 def addition(x,y,ResultDialog):
     x=x
     y=y
-    global result
     result=x+y
-    print("{3} {0} + {1} = {2}". format(x,y,result,ResultDialog))
+    print("{0} {1} + {2} = {3}". format(ResultDialog,x,y,result))
 def Extraction(x,y,ResultDialog):
     x=x
     y=y
-    global result
     result=x-y
-    print("{3} {0} - {1} = {2}". format(x,y,result,ResultDialog))
+    print("{0} {1} - {2} = {3}". format(ResultDialog,x,y,result))
 def Multiplication(x,y,ResultDialog):
     x=x
     y=y
-    global result
     result=x*y
-    print("{3} {0} * {1} = {2}". format(x,y,result,ResultDialog))
+    print("{0} {1} * {2} = {3}". format(ResultDialog,x,y,result))
 def Division(x,y,ResultDialog):
     x=x
     y=y
-    global result
     result=x/y
-    print("{3} {0} / {1} = {2}". format(x,y,result,ResultDialog))
+    print("{0} {1} / {2} = {3}". format(ResultDialog,x,y,result))
 def Percentage(x,y,ResultDialog):
     x=x
     y=y
-    global result
     result=x%y
-    print("{3} {0} % {1} = {2}". format(x,y,result,ResultDialog))
+    print("{0} {1} % {2} = {3}". format(ResultDialog,x,y,result))
 def FullDivision(x,y,ResultDialog):
     x=x
     y=y
-    global result
     result=x//y
-    print("{3} {0} // {1} = {2}". format(x,y,result,ResultDialog))
+    print("{0} {1} // {2} = {3}". format(ResultDialog,x,y,result))
 def TakingExponents(x,y,ResultDialog):
     x=x
     y=y
-    global result
     result=x ** y
-    print("{3} {0} ** {1} = {2}". format(x,y,result,ResultDialog))
+    print("{0} {1} ** {2} = {3}". format(ResultDialog,x,y,result))
 def TakingRoots(x,y,ResultDialog):
     x=x
     y=y
-    global result
     result=x ** (1/y)
-    print("{3} {0} ** (1/{1}) = {2}". format(x,y,result,ResultDialog))
+    print("{0} {1} / (1/y) = {2}". format(ResultDialog,x,result))
 def SqaureRoot(x,ResultDialog):
     x=x
-    global result
     result=x ** (1/2)
-    print("{3} {0} ** (1/2) = {1}". format(x,result,ResultDialog))
+    print("{0} {1} ** (1/2) = {2}". format(ResultDialog,x,result))
