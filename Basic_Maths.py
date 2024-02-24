@@ -7,6 +7,10 @@ A Copy of This Software is published on GITHUB To view: https://github.com/Linux
 
 global result
 
+PYTHON_LIB_LICENCE="GPL2"
+PYTHON_LIB_VER="2.0"
+PYTHON_LIB_AUTHOR="LinuxUsersLinuxMint"
+
 def addition(x,y,ResultDialog):
     x=x
     y=y
@@ -25,8 +29,11 @@ def Multiplication(x,y,ResultDialog):
 def Division(x,y,ResultDialog):
     x=x
     y=y
-    result=x/y
-    print("{0} {1} / {2} = {3}". format(ResultDialog,x,y,result))
+    if y=0:
+        print("The second number cannot be zero in division!")
+    if y>0:
+        result=x/y
+        print("{0} {1} / {2} = {3}". format(ResultDialog,x,y,result))
 def Percentage(x,y,ResultDialog):
     x=x
     y=y
