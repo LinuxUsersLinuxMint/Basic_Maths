@@ -9,7 +9,7 @@ global result
 
 PYTHON_LIB_NAME="Basic_Maths"
 PYTHON_LIB_LICENCE="GPL2"
-PYTHON_LIB_VER="2.1"
+PYTHON_LIB_VER="2.1_installbatnotification"
 PYTHON_LIB_AUTHOR="LinuxUsersLinuxMint"
 
 # Math functions

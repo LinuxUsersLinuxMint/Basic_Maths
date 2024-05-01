@@ -1,0 +1,15 @@
+Türkçe (TR/Turkish):
+
+* "install.bat" dosyası için en kısa zamanda gerekli düzenlemeler yapılacaktır kullanıcılarımıza verdiğimiz rahatsızlıktan ötürü özür dileriz.
+NOT: "LinuxUsersLinuxMint", "Windows/Linux/macOS/OtherOS" için üretilen yazılım geliştirmelerinde "Linux Mint" adlı "Linux Kernel" dağıtımını kullanır.
+Dolayısıyla bu yazılımların geliştirmelerinde "Linux/macOS/OtherOS" için tam destek/kusursuz kurulum sağlayabiliyorken "Windows" platformu için nadiren olmak üzere bunları sağlayamayabiliyoruz.
+"Basic_Maths" kütüphanesini kullanmak isteyen "Windows" kullanıcıları kısa bir süreliğine "Basic_Maths" kütüphanesini geliştirecekleri yazılım projesinin klasörlerine kopyalamaları gerekir (Sadece "Python" projeleri içindir).
+Anlayışınız için teşekkür ederiz :)
+
+English (EN/İngilizce):
+
+* Necessary arrangements will be made for the "install.bat" file as soon as possible. We apologize for the inconvenience caused to our users.
+NOTE: "LinuxUsersLinuxMint" uses the "Linux Kernel" distribution called "Linux Mint" in software developments produced for "Windows/Linux/macOS/OtherOS".
+Therefore, while we can provide full support/flawless installation for "Linux/macOS/OtherOS" in the development of these software, we may rarely be able to provide these for the "Windows" platform.
+"Windows" users who want to use the "Basic_Maths" library must briefly copy the "Basic_Maths" library to the folders of the software project they will develop (For "Python" projects only).
+Thank you for your understanding :)
