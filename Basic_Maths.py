@@ -9,58 +9,62 @@ global result
 
 PYTHON_LIB_NAME="Basic_Maths"
 PYTHON_LIB_LICENCE="GPL2"
-PYTHON_LIB_VER="2.2"
+PYTHON_LIB_VER="2.3"
 PYTHON_LIB_AUTHOR="LinuxUsersLinuxMint"
 
 # Math functions
 
+select_func = str()
+"""
+Example:
+
+input_select = str(input('Which process?'))
+select_func = input_select
+
 def addition(x,y,ResultDialog):
-    x=x
-    y=y
     result=x+y
-    print("{0} {1} + {2} = {3}". format(ResultDialog,x,y,result))
+    print("{0} {1} {2} + {3} = {4}". format(select_func,ResultDialog,x,y,result))
+
+"""
+
+def addition(x,y,ResultDialog):
+    result=x+y
+    print("{0} {1} {2} + {3} = {4}". format(select_func,ResultDialog,x,y,result))
+
 def Extraction(x,y,ResultDialog):
-    x=x
-    y=y
     result=x-y
-    print("{0} {1} - {2} = {3}". format(ResultDialog,x,y,result))
+    print("{0} {1} {2} - {3} = {4}". format(select_func,ResultDialog,x,y,result))
+
 def Multiplication(x,y,ResultDialog):
-    x=x
-    y=y
     result=x*y
-    print("{0} {1} * {2} = {3}". format(ResultDialog,x,y,result))
+    print("{0} {1} {2} * {3} = {4}". format(select_func,ResultDialog,x,y,result))
+
 def Division(x,y,ResultDialog):
-    x=x
-    y=y
     if y=0:
         print("The second number cannot be zero in division!")
     if y>0:
         result=x/y
-        print("{0} {1} / {2} = {3}". format(ResultDialog,x,y,result))
+        print("{0} {1} {2} / {3} = {4}". format(select_func,ResultDialog,x,y,result))
+
 def Percentage(x,y,ResultDialog):
-    x=x
-    y=y
     result=x%y
-    print("{0} {1} % {2} = {3}". format(ResultDialog,x,y,result))
+    print("{0} {1} {2} % {3} = {4}". format(select_func,ResultDialog,x,y,result))
+
 def FullDivision(x,y,ResultDialog):
-    x=x
-    y=y
     result=x//y
-    print("{0} {1} // {2} = {3}". format(ResultDialog,x,y,result))
+    print("{0} {1} {2} // {3} = {4}". format(select_func,ResultDialog,x,y,result))
+
 def TakingExponents(x,y,ResultDialog):
-    x=x
-    y=y
     result=x ** y
-    print("{0} {1} ** {2} = {3}". format(ResultDialog,x,y,result))
+    print("{0} {1} {2} ** {3} = {4}". format(select_func,ResultDialog,x,y,result))
+
 def TakingRoots(x,y,ResultDialog):
-    x=x
-    y=y
     result=x ** (1/y)
-    print("{0} {1} / (1/y) = {2}". format(ResultDialog,x,result))
+    print("{0} {1} {2} / (1/y) = {3}". format(select_func,ResultDialog,x,result))
+
 def SqaureRoot(x,ResultDialog):
-    x=x
     result=x ** (1/2)
-    print("{0} {1} ** (1/2) = {2}". format(ResultDialog,x,result))
+    print("{0} {1} {2} ** (1/2) = {3}". format(select_func,ResultDialog,x,result))
 
 
 # Library functions
