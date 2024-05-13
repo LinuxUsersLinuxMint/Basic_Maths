@@ -9,7 +9,7 @@ global result
 
 PYTHON_LIB_NAME="Basic_Maths"
 PYTHON_LIB_LICENCE="GPL2"
-PYTHON_LIB_VER="2.3"
+PYTHON_LIB_VER="2.5"
 PYTHON_LIB_AUTHOR="LinuxUsersLinuxMint"
 
 # Math functions
@@ -40,7 +40,7 @@ def Multiplication(x,y,ResultDialog):
     print("{0} {1} {2} * {3} = {4}". format(select_func,ResultDialog,x,y,result))
 
 def Division(x,y,ResultDialog):
-    if y=0:
+    if y==0:
         print("The second number cannot be zero in division!")
     if y>0:
         result=x/y
