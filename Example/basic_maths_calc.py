@@ -4,28 +4,33 @@
 It is a example program made with Basic_Maths. It was written to serve as an example of (Basic_Maths) usage.
 Sharing of the file named "basic_maths_calc.py" in posts (blog/post etc. on the internet) has been given permission by @LinuxUsersLinuxMint. """
 
-from Basic_Maths import *
-number1=int(input('N1: '))
-number2=int(input('N2: '))
-select=str(input('Select (Add, Ext, Mul, Div, Per, FullDiv, TakeEx): '))
+from ..Basic_Maths.Basic_Maths import *
+
+input_dialog = str("Enter the number: ")
+error_dialog = str("Invalid process...")
+resultdialog = str("Result:")
+
+InputN1N2()
+
+select=print('Select (Add, Ext, Mul, Div, Per, FullDiv, TakeEx): ')
 
 input_select = str(input('Which process?'))
 select_func = input_select
-resultdialog = str("Result:")
+
 
 if select=="Add":
-    addition(number1,number2,resultdialog)
+    addition(number_one,number_two,resultdialog)
 elif select=="Ext":
-    Extraction(number1,number2,resultdialog)
+    Extraction(number_one,number_two,resultdialog)
 elif select=="Mul":
-    Multiplication(number1,number2,resultdialog)
+    Multiplication(number_one,number_two,resultdialog)
 elif select=="Div":
-    Division(number1,number2,resultdialog)
+    Division(number_one,number_two,resultdialog,"The second number cannot be zero in division!")
 elif select=="Per":
-    Percentage(number1,number2,resultdialog)
+    Percentage(number_one,number_two,resultdialog)
 elif select=="FullDiv":
-    FullDivision(number1,number2,resultdialog)
+    FullDivision(number_one,number_two,resultdialog)
 elif select=="TakeEx":
-    TakingExponents(number1,number2,resultdialog)
+    TakingExponents(number_one,number_two,resultdialog)
 else:
-    print("Invalid Process...!")
+    error_msg()
