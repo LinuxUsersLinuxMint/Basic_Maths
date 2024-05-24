@@ -75,9 +75,9 @@ def Multiplication(x,y,ResultDialog):
     p("{0} {1} {2} * {3} = {4}". format(select_func,ResultDialog,x,y,result))
 
 def Division(x,y,ResultDialog,check_zero_control_msg):
-    if y==0:
+    if x==0 or y==0:
         p(check_zero_control_msg)
-    if y>0:
+    if y>0 and x>0:
         result=x/y
         p("{0} {1} {2} / {3} = {4}". format(select_func,ResultDialog,x,y,result))
 
