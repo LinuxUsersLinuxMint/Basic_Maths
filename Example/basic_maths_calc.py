@@ -19,7 +19,7 @@ select_func = input_select
 
 
 if select=="Add":
-    addition(number_one,number_two,resultdialog)
+    Addition(number_one,number_two,resultdialog)
 elif select=="Ext":
     Extraction(number_one,number_two,resultdialog)
 elif select=="Mul":

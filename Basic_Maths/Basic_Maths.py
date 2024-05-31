@@ -62,7 +62,7 @@ def addition(x,y,ResultDialog):
 
 """
 
-def addition(x,y,ResultDialog):
+def Addition(x,y,ResultDialog):
     result=x+y
     p("{0} {1} {2} + {3} = {4}". format(select_func,ResultDialog,x,y,result))
 
