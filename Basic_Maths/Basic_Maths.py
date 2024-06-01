@@ -21,11 +21,13 @@ def error_msg():
 
 def exit_program_dialog_time(exit_dialog_msg,userTime):
     p(exit_dialog_msg)
+    userTime = int(userTime)
     time.sleep(userTime)
     exit()
 
 def exit_program_time(userTime):
     time.sleep(userTime)
+    userTime = int(userTime)
     exit()
 
 def exit_program_dialog(exit_dialog_msg):
@@ -37,11 +39,11 @@ def program_welcome_msg(welcome_msg):
 
 def program_info(programnamedialog,program_name,programversiondialog,program_version,programsupportosdialog,program_support_os,programlicencedialog,program_licence,programauthordialog,program_author,programreleasedatedialog,program_rs_date):
     p("{0} {1}". format(programnamedialog,program_name))
-    p("{0} {1}\n". format(programversiondialog,program_version))
-    p("{0} {1}\n". format(programsupportosdialog,program_support_os))
-    p("{0} {1}\n". format(programlicencedialog,program_licence))
-    p("{0} {1}\n". format(programauthordialog,program_author))
-    p("{0} {1}\n". format(programreleasedatedialog,program_rs_date))
+    p("{0} {1}". format(programversiondialog,program_version))
+    p("{0} {1}". format(programsupportosdialog,program_support_os))
+    p("{0} {1}". format(programlicencedialog,program_licence))
+    p("{0} {1}". format(programauthordialog,program_author))
+    p("{0} {1}". format(programreleasedatedialog,program_rs_date))
     
 
 def InputN1N2():
