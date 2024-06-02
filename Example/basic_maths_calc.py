@@ -6,11 +6,10 @@ Sharing of the file named "basic_maths_calc.py" in posts (blog/post etc. on the 
 
 from ..Basic_Maths.Basic_Maths import *
 
-input_dialog = str("Enter the number: ")
 error_dialog = str("Invalid process...")
 resultdialog = str("Result:")
 
-InputN1N2()
+InputN1N2("Enter the 1st number: ", "Enter the 2nd number: ")
 
 select=print('Select (Add, Ext, Mul, Div, Per, FullDiv, TakeEx): ')
 

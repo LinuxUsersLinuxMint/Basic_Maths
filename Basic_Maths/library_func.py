@@ -16,4 +16,6 @@ def LibAbout():
     p("Python Library Support OS: {0}", format(PYTHON_LIB_SUPPORT_PLATFORM))
     p("Python Library Licence Name: {0}", format(PYTHON_LIB_LICENCE))
     p("Python Library Author Name: {0}", format(PYTHON_LIB_AUTHOR))
+    p("Python Library Author Web Site: {0}", format(PYTHON_LIB_AUTHOR_WEB_SITE))
     p("Python Library Release Date: {0}", format(PYTHON_LIB_RELEASE_DATE))
+    p("Python Library Last Update Date: {0}", format(PYTHON_LIB_LAST_UPDATE_DATE))
