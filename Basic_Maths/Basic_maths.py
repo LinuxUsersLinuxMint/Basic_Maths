@@ -9,10 +9,10 @@ import time,os,platform
 
 PYTHON_LIB_NAME="Basic_Maths"
 PYTHON_LIB_LICENCE="GPL2"
-PYTHON_LIB_VER="4.0"
+PYTHON_LIB_VER="4.1"
 PYTHON_LIB_SUPPORT_PLATFORM="Windows/Linux/macOS/otherOS"
 PYTHON_LIB_RELEASE_DATE="9/30/2023, Time: XX:XX"
-PYTHON_LIB_LAST_UPDATE_DATE="6/3/2024, Time: 12:50"
+PYTHON_LIB_LAST_UPDATE_DATE="6/4/2024, Time: 23:42 / 11:42 PM"
 PYTHON_LIB_AUTHOR="LinuxUsersLinuxMint"
 PYTHON_LIB_AUTHOR_WEB_SITE="https://linuxuserslinuxmint.github.io"
 
@@ -32,33 +32,27 @@ def error_msg():
     print(error_dialog)
 
 def exit_program_dialog_time(exit_dialog_msg,userTime):
+    print(exit_dialog_msg)
+    userTime = int(userTime)
+    time.sleep(userTime)
     if platform.system() == "Windows":
-        print(exit_dialog_msg)
-        userTime = int(userTime)
-        time.sleep(userTime)
         os.system("exit")
     else:
-        print(exit_dialog_msg)
-        userTime = int(userTime)
-        time.sleep(userTime)
         exit()
 
 def exit_program_time(userTime):
+    time.sleep(userTime)
+    userTime = int(userTime)
     if platform.system() == "Windows":
-        time.sleep(userTime)
-        userTime = int(userTime)
         os.system("exit")
     else:
-        time.sleep(userTime)
-        userTime = int(userTime)
         exit()
 
 def exit_program_dialog(exit_dialog_msg):
+    print(exit_dialog_msg)
     if platform.system() == "Windows":
-        print(exit_dialog_msg)
         os.system("exit")
     else:
-        print(exit_dialog_msg)
         exit()
 
 """ Example Dialog (ExitSelectDialog): "Select the method to exit the program (0: Dialogue and Time entry, 1: Time entry only, 2: Dialogue entry only, 3: Normal exit (old style)): "
@@ -73,7 +67,7 @@ def all_exit(ExitSelectDialog,userTimeDialog,exitDialog,errormsgDialog):
         userTime = input(userTimeDialog)
         exit_program_dialog_time(exitDialog, userTime)
     elif exit_select == 1:
-        userTime = input(userTime)
+        userTime = input(userTimeDialog)
         exit_program_time(userTime)
     elif exit_select == 2:
         exit_program_dialog(exitDialog)
@@ -83,11 +77,11 @@ def all_exit(ExitSelectDialog,userTimeDialog,exitDialog,errormsgDialog):
         print(errormsgDialog)
 
 def program_welcome_msg(welcome_msg,cfg):
+    print(welcome_msg)
     if cfg == 1:
-        print(welcome_msg)
         LibAbout()
     elif cfg == 0:
-        print(welcome_msg)
+        pass
 
 def program_info(programnamedialog,program_name,programversiondialog,program_version,programsupportosdialog,program_support_os,programlicencedialog,program_licence,programauthordialog,program_author,programauthorwebsitedialog,program_author_web_site,programreleasedatedialog,program_rs_date,programlastupdatedatedialog,program_last_update_date):
     print("{0} {1}". format(programnamedialog,program_name))
