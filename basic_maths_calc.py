@@ -4,7 +4,8 @@
 It is a example program made with Basic_Maths. It was written to serve as an example of (Basic_Maths) usage.
 Sharing of the file named "basic_maths_calc.py" in posts (blog/post etc. on the internet) has been given permission by @LinuxUsersLinuxMint. """
 
-from Basic_Maths.Basic_maths import *
+from Basic_Maths.Basic_Maths import *
 
 LibAbout()
 all_math_operations("Select Operations: ","1. Addition","2. Extraction","3. Multiplication","4. Division","5. Percentage","6. FullDivision","7. TakingExponents","8. TakingRoots","9. SquareRoot","Select a transaction?: ","Enter the 1st number: ","Enter the 2nd number: ","Result:","Numbers cannot be zero in division!","Invalid Process!")
+error_msg("error msg")
