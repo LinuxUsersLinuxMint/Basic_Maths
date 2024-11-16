@@ -9,3 +9,5 @@ from Basic_Maths.Basic_Maths import *
 LibAbout()
 all_math_operations("Select Operations: ","1. Addition","2. Extraction","3. Multiplication","4. Division","5. Percentage","6. FullDivision","7. TakingExponents","8. TakingRoots","9. SquareRoot","Select a transaction?: ","Enter the 1st number: ","Enter the 2nd number: ","Result:","Numbers cannot be zero in division!","Invalid Process!","1","add","addition","Addition","Toplama","2","ext","extraction","Extraction","Çıkarma","3","mul","multiplication","Multiplication","Çarpma","4","div","division","Division","Bölme","5","per","percentage","Percentage","Yüzdelik hesaplama","6","fulldiv","fulldivision","FullDivision","Tam bölüm","7","takingexp","takingexponents","TakingExponents","Üslü sayı alma","8","takingrt","takingroots","TakingRoots","Kök Alma","9","sqrt","squareroot","SquareRoot","Karekök")
 error_msg("error msg [TEST_FUNCTION]")
+
+exit_program_time(10)
