@@ -51,6 +51,10 @@ def Division(x,y,ResultDialog,check_zero_control_msg):
         print("{0} {1} {2} / {3} = {4}". format(select_func,ResultDialog,x,y,result))
 
 def Percentage(x,y,ResultDialog):
+      result = (x*y)/100
+      print("{0} {1} ({2} * {3})/100 = {4}". format(select_func,ResultDialog,x,y,result))
+
+def Mod(x,y,ResultDialog):
     result=x%y
     print("{0} {1} {2} % {3} = {4}". format(select_func,ResultDialog,x,y,result))
 
@@ -82,7 +86,7 @@ NOTE2: With the "select_process" variable, developers can optionally display the
 NOTE3: Along with the "nod" and "ntd" variables, developers can use the "InputN1N2()" function in the "all_math_operations()" function and add the 1st issue and 2nd issue dialogs through these variables.
 SUGGESTION: If your wishes or needs are different, it is recommended that you change it according to your needs before using the "all_math_operations()" function. """
 
-def all_math_operations(optDialog,first_opt_dialog,second_opt_dialog,third_opt_dialog,fourth_opt_dialog,fifth_opt_dialog,sixth_opt_dialog,seventh_opt_dialog,eighth_opt_dialog,ninth_opt_dialog,SelectOptDialog,nod,ntd,resdialog,divisionzerocheckdialog,errdg,addition_options_one,addition_options_two,addition_options_three,addition_options_four,addition_options_five,extraction_options_one,extraction_options_two,extraction_options_three,extraction_options_four,extraction_options_five,multiplication_options_one,multiplication_options_two,multiplication_options_three,multiplication_options_four,multiplication_options_five,division_options_one,division_options_two,division_options_three,division_options_four,division_options_five,percentage_options_one,percentage_options_two,percentage_options_three,percentage_options_four,percentage_options_five,fulldivision_options_one,fulldivision_options_two,fulldivision_options_three,fulldivision_options_four,fulldivision_options_five,takingexponents_options_one,takingexponents_options_two,takingexponents_options_three,takingexponents_options_four,takingexponents_options_five,takingroots_options_one,takingroots_options_two,takingroots_options_three,takingroots_options_four,takingroots_options_five,squareroot_options_one,squareroot_options_two,squareroot_options_three,squareroot_options_four,squareroot_options_five):
+def all_math_operations(optDialog,first_opt_dialog,second_opt_dialog,third_opt_dialog,fourth_opt_dialog,fifth_opt_dialog,sixth_opt_dialog,seventh_opt_dialog,eighth_opt_dialog,ninth_opt_dialog,tenth_opt_dialog,SelectOptDialog,nod,ntd,resdialog,divisionzerocheckdialog,errdg,addition_options_one,addition_options_two,addition_options_three,addition_options_four,addition_options_five,extraction_options_one,extraction_options_two,extraction_options_three,extraction_options_four,extraction_options_five,multiplication_options_one,multiplication_options_two,multiplication_options_three,multiplication_options_four,multiplication_options_five,division_options_one,division_options_two,division_options_three,division_options_four,division_options_five,percentage_options_one,percentage_options_two,percentage_options_three,percentage_options_four,percentage_options_five,fulldivision_options_one,fulldivision_options_two,fulldivision_options_three,fulldivision_options_four,fulldivision_options_five,takingexponents_options_one,takingexponents_options_two,takingexponents_options_three,takingexponents_options_four,takingexponents_options_five,takingroots_options_one,takingroots_options_two,takingroots_options_three,takingroots_options_four,takingroots_options_five,squareroot_options_one,squareroot_options_two,squareroot_options_three,squareroot_options_four,squareroot_options_five,mod_options_one,mod_options_two,mod_options_three,mod_options_four,mod_options_five):
     print(optDialog)
     print(first_opt_dialog)
     print(second_opt_dialog)
@@ -93,6 +97,7 @@ def all_math_operations(optDialog,first_opt_dialog,second_opt_dialog,third_opt_d
     print(seventh_opt_dialog)
     print(eighth_opt_dialog)
     print(ninth_opt_dialog)
+    print(tenth_opt_dialog)
     select_func = str(input(SelectOptDialog))
     InputN1N2(nod,ntd)
     if select_func == addition_options_one or select_func == addition_options_two or select_func == addition_options_three or select_func == addition_options_four or select_func == addition_options_five:
@@ -112,6 +117,8 @@ def all_math_operations(optDialog,first_opt_dialog,second_opt_dialog,third_opt_d
     elif select_func == takingroots_options_one or select_func == takingroots_options_two or select_func == takingroots_options_three or select_func == takingroots_options_four or select_func == takingroots_options_five:
         TakingRoots(number_one,number_two,resdialog)
     elif select_func == squareroot_options_one or select_func == squareroot_options_two or select_func == squareroot_options_three or select_func == squareroot_options_four or select_func == squareroot_options_five:
-        SqaureRoot(number_one,resdialog) 
+        SqaureRoot(number_one,resdialog)
+    elif select_func == mod_options_one or select_func == mod_options_two or select_func == mod_options_three or select_func == mod_options_four or select_func == mod_options_five:
+        Mod(number_one,number_two,resdialog)
     else:
         error_msg(errdg)
