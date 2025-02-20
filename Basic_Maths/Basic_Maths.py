@@ -6,39 +6,120 @@ Bu Yazılımın Bir Kopyası GİTHUB da yayınlanmaktadır Görüntülemek için
 A Copy of This Software is published on GITHUB To view: https://github.com/LinuxUsersLinuxMint/Basic_Maths"""
 
 from Basic_Maths.Lib.lib import *
+from Basic_Maths.Lib.file import *
 
-def Addition(x,y,ResultDialog):
+def Addition(x,y,ResultDialog,save_cfg,file_name,save_err_msg):
     print("{0} {1} + {2} = {3}". format(ResultDialog,x,y,x+y))
 
-def Extraction(x,y,ResultDialog):
+    if save_cfg == ON:
+        create_file = open(file_name, "a")
+        create_file.write("{0} {1} + {2} = {3}\n". format(ResultDialog,x,y,x+y))
+    elif save_cfg == OFF:
+        pass
+    else:
+        error_msg(save_err_msg)
+
+def Extraction(x,y,ResultDialog,save_cfg,file_name,save_err_msg):
     print("{0} {1} - {2} = {3}". format(ResultDialog,x,y,x-y))
 
-def Multiplication(x,y,ResultDialog):
+    if save_cfg == ON:
+        create_file = open(file_name, "a")
+        create_file.write("{0} {1} - {2} = {3}\n". format(ResultDialog,x,y,x-y))
+    elif save_cfg == OFF:
+        pass
+    else:
+        error_msg(save_err_msg)
+
+def Multiplication(x,y,ResultDialog,save_cfg,file_name,save_err_msg):
     print("{0} {1} * {2} = {3}". format(ResultDialog,x,y,x*y))
 
-def Division(x,y,ResultDialog,check_zero_control_msg):
-    if x==0 or y==0:
-        print(check_zero_control_msg)
-    if y>0 and x>0:
-        print("{0} {1} / {2} = {3}". format(ResultDialog,x,y,x/y))
+    if save_cfg == ON:
+        create_file = open(file_name, "a")
+        create_file.write("{0} {1} * {2} = {3}\n". format(ResultDialog,x,y,x*y))
+    elif save_cfg == OFF:
+        pass
+    else:
+        error_msg(save_err_msg)
 
-def Percentage(x,y,ResultDialog):
+def Division(x,y,ResultDialog,check_zero_msg,save_cfg,file_name,save_err_msg):
+    if x==0 or y==0:
+        print(check_zero_msg)
+    else:
+        print("{0} {1} / {2} = {3}". format(ResultDialog,x,y,x/y))
+        
+        if save_cfg == ON:
+            create_file = open(file_name, "a")
+            create_file.write("{0} {1} / {2} = {3}\n". format(ResultDialog,x,y,x/y))
+        elif save_cfg == OFF:
+            pass
+        else:
+            error_msg(save_err_msg)
+
+def Percentage(x,y,ResultDialog,save_cfg,file_name,save_err_msg):
       print("{0} ({1} * {2})/100 = {3}". format(ResultDialog,x,y,(x*y)/100))
 
-def Mod(x,y,ResultDialog):
+      if save_cfg == ON:
+        create_file = open(file_name, "a")
+        create_file.write("{0} ({1} * {2})/100 = {3}\n". format(ResultDialog,x,y,(x*y)/100))
+      elif save_cfg == OFF:
+          pass
+      else:
+          error_msg(save_err_msg)
+
+def Mod(x,y,ResultDialog,save_cfg,file_name,save_err_msg):
     print("{0} {1} % {2} = {3}". format(ResultDialog,x,y,x%y))
 
-def FullDivision(x,y,ResultDialog):
+    if save_cfg == ON:
+        create_file = open(file_name, "a")
+        create_file.write("{0} {1} % {2} = {3}\n". format(ResultDialog,x,y,x%y))
+    elif save_cfg == OFF:
+        pass
+    else:
+        error_msg(save_err_msg)
+
+def FullDivision(x,y,ResultDialog,save_cfg,file_name,save_err_msg):
     print("{0} {1} // {2} = {3}". format(ResultDialog,x,y,x//y))
 
-def TakingExponents(x,y,ResultDialog):
+    if save_cfg == ON:
+        create_file = open(file_name, "a")
+        create_file.write("{0} {1} // {2} = {3}\n". format(ResultDialog,x,y,x//y))
+    elif save_cfg == OFF:
+        pass
+    else:
+        error_msg(save_err_msg)
+
+def TakingExponents(x,y,ResultDialog,save_cfg,file_name,save_err_msg):
     print("{0} {1} ** {2} = {3}". format(ResultDialog,x,y,x**y))
 
-def TakingRoots(x,y,ResultDialog):
+    if save_cfg == ON:
+        create_file = open(file_name, "a")
+        create_file.write("{0} {1} ** {2} = {3}\n". format(ResultDialog,x,y,x**y))
+    elif save_cfg == OFF:
+        pass
+    else:
+        error_msg(save_err_msg)
+
+def TakingRoots(x,y,ResultDialog,save_cfg,file_name,save_err_msg):
     print("{0} {1} / (1/{2}) = {3}". format(ResultDialog,x,y,x**(1/y)))
 
-def SqaureRoot(x,ResultDialog):
+    if save_cfg == ON:
+        create_file = open(file_name, "a")
+        create_file.write("{0} {1} - {2} = {3}\n". format(ResultDialog,x,y,x**(1/y)))
+    elif save_cfg == OFF:
+        pass
+    else:
+        error_msg(save_err_msg)
+
+def SqaureRoot(x,ResultDialog,save_cfg,file_name,save_err_msg):
     print("{0} {1} ** (1/2) = {2}". format(ResultDialog,x,x**(1/2)))
+
+    if save_cfg == ON:
+        create_file = open(file_name, "a")
+        create_file.write("{0} {1} ** (1/2) {2} = {3}\n". format(ResultDialog,x,x**(1/2)))
+    elif save_cfg == OFF:
+        pass
+    else:
+        error_msg(save_err_msg)
 
 """ TR (Turkish / Türkçe):
 NOT: "Basic_Maths" kütüphanesini kullanan geliştiriciler programlarındaki ihtiyaçlara göre "Basic_Maths" fonksiyonlarını değiştirebilirler.
@@ -64,24 +145,24 @@ def all_math_operations(optDialog,first_opt_dialog,second_opt_dialog,third_opt_d
     number_one=input(nod)
     number_two=input(ntd)
     if select_func == addition_options_one or select_func == addition_options_two or select_func == addition_options_three or select_func == addition_options_four or select_func == addition_options_five:
-        Addition(number_one,number_two,resdialog)
+        Addition(number_one,number_two,resdialog,save_cfg=OFF,file_name="",save_err_msg="")
     elif select_func == extraction_options_one or select_func == extraction_options_two or select_func == extraction_options_three or select_func == extraction_options_four or select_func == extraction_options_five:
-        Extraction(number_one,number_two,resdialog)
+        Extraction(number_one,number_two,resdialog,save_cfg=OFF,file_name="",save_err_msg="")
     elif select_func == multiplication_options_one or select_func == multiplication_options_two or select_func == multiplication_options_three or select_func == multiplication_options_four or select_func == multiplication_options_five:
-        Multiplication(number_one,number_two,resdialog)
+        Multiplication(number_one,number_two,resdialog,save_cfg=OFF,file_name="",save_err_msg="")
     elif select_func == division_options_one or select_func == division_options_two or select_func == division_options_three or select_func == division_options_four or select_func == division_options_five:
-        Division(number_one,number_two,resdialog,divisionzerocheckdialog)
+        Division(number_one,number_two,resdialog,divisionzerocheckdialog,save_cfg=OFF,file_name="",save_err_msg="")
     elif select_func == percentage_options_one or select_func == percentage_options_two or select_func == percentage_options_three or select_func == percentage_options_four or select_func == percentage_options_five:
-        Percentage(number_one,number_two,resdialog)
+        Percentage(number_one,number_two,resdialog,save_cfg=OFF,file_name="",save_err_msg="")
     elif select_func == fulldivision_options_one or select_func == fulldivision_options_two or select_func == fulldivision_options_three or select_func == fulldivision_options_four or select_func == fulldivision_options_five:
-        FullDivision(number_one,number_two,resdialog)
+        FullDivision(number_one,number_two,resdialog,save_cfg=OFF,file_name="",save_err_msg="")
     elif select_func == takingexponents_options_one or select_func == takingexponents_options_two or select_func == takingexponents_options_three or select_func == takingexponents_options_four or select_func == takingexponents_options_five:
-        TakingExponents(number_one,number_two,resdialog)
+        TakingExponents(number_one,number_two,resdialog,save_cfg=OFF,file_name="",save_err_msg="")
     elif select_func == takingroots_options_one or select_func == takingroots_options_two or select_func == takingroots_options_three or select_func == takingroots_options_four or select_func == takingroots_options_five:
-        TakingRoots(number_one,number_two,resdialog)
+        TakingRoots(number_one,number_two,resdialog,save_cfg=OFF,file_name="",save_err_msg="")
     elif select_func == squareroot_options_one or select_func == squareroot_options_two or select_func == squareroot_options_three or select_func == squareroot_options_four or select_func == squareroot_options_five:
-        SqaureRoot(number_one,resdialog)
+        SqaureRoot(number_one,resdialog,save_cfg=OFF,file_name="",save_err_msg="")
     elif select_func == mod_options_one or select_func == mod_options_two or select_func == mod_options_three or select_func == mod_options_four or select_func == mod_options_five:
-        Mod(number_one,number_two,resdialog)
+        Mod(number_one,number_two,resdialog,save_cfg=OFF,file_name="",save_err_msg="")
     else:
         error_msg(errdg)

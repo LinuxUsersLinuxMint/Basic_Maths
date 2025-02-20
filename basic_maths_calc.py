@@ -11,3 +11,7 @@ all_math_operations("Select Operations: ","1. Addition","2. Extraction","3. Mult
 error_msg("error msg [TEST_FUNCTION]")
 
 exit_program_time(10)
+
+Addition(10,5,"RESULT:",save_cfg=ON,file_name="test.txt",save_err_msg="Error_msg")
+Extraction(20,5,"RESULT:",save_cfg=ON,file_name="test.txt",save_err_msg="Error_msg")
+Multiplication(30,5,"RESULT:",save_cfg=ON,file_name="test.txt",save_err_msg="Error_msg")
