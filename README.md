@@ -1,6 +1,6 @@
 # Basic_Maths
 
-TR (Turkish / Türkçe):
+Türkçe:
 
 * Python için matematik işlemlerini basitleştirir ve kullanımı kolay bir hale getirir.
 * Kodlama/geliştirme süresini kısaltır işlerinizi daha hızlı halledebilirsiniz.
@@ -8,7 +8,7 @@ TR (Turkish / Türkçe):
 * Sürekli güncel kalır bu sayede sürekli yeni özellikler eklenir ve hata varsa bunlar çözülür.
 * En iyi kullanıcı deneyiminiz için "Basic_Maths" kütüphanesinin her zaman en son sürümünü kullanınız.
 
-EN (English / İngilizce):
+English:
 
 * It simplifies math operations for Python and makes it easy to use.
 * It shortens the coding/development time and you can get your work done faster.
