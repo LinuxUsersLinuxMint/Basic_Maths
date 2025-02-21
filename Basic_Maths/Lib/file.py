@@ -6,4 +6,4 @@ Bu Yazılımın Bir Kopyası GİTHUB da yayınlanmaktadır Görüntülemek için
 A Copy of This Software is published on GITHUB To view: https://github.com/LinuxUsersLinuxMint/Basic_Maths"""
 
 ON=0
-OFF=0
+OFF=1
