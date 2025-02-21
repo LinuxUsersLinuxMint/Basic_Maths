@@ -7,7 +7,6 @@ TR (Turkish / Türkçe):
 * Kodun daha rahat anlaşılmasını sağlar ve daha az satır kod yazmış olursunuz.
 * Sürekli güncel kalır bu sayede sürekli yeni özellikler eklenir ve hata varsa bunlar çözülür.
 * En iyi kullanıcı deneyiminiz için "Basic_Maths" kütüphanesinin her zaman en son sürümünü kullanınız.
-* Geliştiriciler için kolaylık sağlar "Python" ile yazılmış olan programlarda kendi programınız hakkında bilgi verebilmeniz için "program_info()" fonksiyonu bulunur ayrıca "LibAbout()" fonksiyonu ile de "Basic_Maths" kütüphanesi hakkında da bilgi verebilirsiniz.
 
 EN (English / İngilizce):
 
@@ -16,4 +15,3 @@ EN (English / İngilizce):
 * It makes the code easier to understand and you write fewer lines of code.
 * It remains constantly updated, so new features are constantly added and if there are errors, they are resolved.
 * For your best user experience, always use the latest version of the "Basic_Maths" library.
-* Provides convenience for developers. Programs written in "Python" have the "program_info()" function so that you can provide information about your own program, and you can also provide information about the "Basic_Maths" library with the "LibAbout()" function.
