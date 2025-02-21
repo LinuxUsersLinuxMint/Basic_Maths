@@ -6,11 +6,11 @@ Sharing of the file named "basic_maths_calc.py" in posts (blog/post etc. on the 
 
 from Basic_Maths.Basic_Maths import *
 
-#LibAbout()
-#all_math_operations("Select Operations: ","1. Addition","2. Extraction","3. Multiplication","4. Division","5. Percentage","6. FullDivision","7. TakingExponents","8. TakingRoots","9. SquareRoot","10. Mod","Select a transaction?: ","Enter the 1st number: ","Enter the 2nd number: ","Result:","Numbers cannot be zero in division!","Invalid Process!","1","add","addition","Addition","Toplama","2","ext","extraction","Extraction","Çıkarma","3","mul","multiplication","Multiplication","Çarpma","4","div","division","Division","Bölme","5","per","percentage","Percentage","Yüzdelik hesaplama","6","fulldiv","fulldivision","FullDivision","Tam bölüm","7","takingexp","takingexponents","TakingExponents","Üslü sayı alma","8","takingrt","takingroots","TakingRoots","Kök Alma","9","sqrt","squareroot","SquareRoot","Karekök","10","Mod","Modulus operation","","")
-#error_msg("error msg [TEST_FUNCTION]")
+LibAbout()
+all_math_operations("Select Operations: ","1. Addition","2. Extraction","3. Multiplication","4. Division","5. Percentage","6. FullDivision","7. TakingExponents","8. TakingRoots","9. SquareRoot","10. Mod","Select a transaction?: ","Enter the 1st number: ","Enter the 2nd number: ","Result:","Numbers cannot be zero in division!","Invalid Process!","1","add","addition","Addition","Toplama","2","ext","extraction","Extraction","Çıkarma","3","mul","multiplication","Multiplication","Çarpma","4","div","division","Division","Bölme","5","per","percentage","Percentage","Yüzdelik hesaplama","6","fulldiv","fulldivision","FullDivision","Tam bölüm","7","takingexp","takingexponents","TakingExponents","Üslü sayı alma","8","takingrt","takingroots","TakingRoots","Kök Alma","9","sqrt","squareroot","SquareRoot","Karekök","10","Mod","Modulus operation","","")
+error_msg("error msg [TEST_FUNCTION]")
 
-#exit_program_time(10)
+exit_program_time(10)
 
 Addition(10,5,"RESULT:",save_cfg=ON,file_name="test.txt",save_err_msg="Error_msg")
 Extraction(20,5,"RESULT:",save_cfg=ON,file_name="test.txt",save_err_msg="Error_msg")
