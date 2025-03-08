@@ -15,3 +15,35 @@ English:
 * Thanks to predefined mathematical functions, you will write both fewer lines and understandable code.
 * It is always up to date, so new features are constantly added and if there are bugs, they are solved.
 * Always use the latest version of the “Basic_Maths” library for the best user experience.
+
+# How to use?
+
+Türkçe:
+
+Basic_Maths kütüphanesini projenize dahil etmek için öncelikle dikkat etmeniz gerekenler:
+* Basic_Maths kütüphanesini indirin ve çıkarma işlemini gerçekleştiriniz.
+* Ardından Basic_Maths klasörünü projenize taşıyınız.
+
+Projeye dahil etme:
+
+```Python
+#!/usr/bin/python3
+
+from Basic_Maths.Basic_Maths import *
+```
+işte Basic_Maths kütüphanesini projenize dahil etmek bu kadar kolay.
+
+English:
+
+To include the Basic_Maths library in your project, first things first:
+* Download the Basic_Maths library and extract it.
+* Then move the Basic_Maths folder to your project.
+
+Inclusion in the project:
+
+```Python
+#!/usr/bin/python3
+
+from Basic_Maths.Basic_Maths import *
+```
+That's how easy it is to include the Basic_Maths library in your project.
