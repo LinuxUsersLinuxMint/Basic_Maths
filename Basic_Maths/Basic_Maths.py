@@ -15,6 +15,8 @@ def Addition(x,y,ResultDialog,save_cfg,file_name,save_err_msg):
         file(file_name=file_name,file_mode="a",file_write="{0} {1} + {2} = {3}\n". format(ResultDialog,x,y,x+y))
     elif save_cfg == OFF:
         pass
+    elif save_cfg == AUTO:
+        file(file_name="history.txt",file_mode="a",file_write="{0} {1} + {2} = {3}\n". format(ResultDialog,x,y,x+y))
     else:
         error_msg(save_err_msg,"","")
 
@@ -25,6 +27,8 @@ def Extraction(x,y,ResultDialog,save_cfg,file_name,save_err_msg):
         file(file_name=file_name,file_mode="a",file_write="{0} {1} - {2} = {3}\n". format(ResultDialog,x,y,x-y))
     elif save_cfg == OFF:
         pass
+    elif save_cfg == AUTO:
+        file(file_name="history.txt",file_mode="a",file_write="{0} {1} - {2} = {3}\n". format(ResultDialog,x,y,x-y))
     else:
         error_msg(save_err_msg,"","")
 
@@ -35,6 +39,8 @@ def Multiplication(x,y,ResultDialog,save_cfg,file_name,save_err_msg):
         file(file_name=file_name,file_mode="a",file_write="{0} {1} * {2} = {3}\n". format(ResultDialog,x,y,x*y))
     elif save_cfg == OFF:
         pass
+    elif save_cfg == AUTO:
+        file(file_name="history.txt",file_mode="a",file_write="{0} {1} * {2} = {3}\n". format(ResultDialog,x,y,x*y))
     else:
         error_msg(save_err_msg,"","")
 
@@ -48,6 +54,8 @@ def Division(x,y,ResultDialog,check_zero_msg,save_cfg,file_name,save_err_msg):
             file(file_name=file_name,file_mode="a",file_write="{0} {1} / {2} = {3}\n". format(ResultDialog,x,y,x/y))
         elif save_cfg == OFF:
             pass
+        elif save_cfg == AUTO:
+            file(file_name="history.txt",file_mode="a",file_write="{0} {1} / {2} = {3}\n". format(ResultDialog,x,y,x/y))
         else:
             error_msg(save_err_msg,"","")
 
@@ -58,6 +66,8 @@ def Percentage(x,y,ResultDialog,save_cfg,file_name,save_err_msg):
         file(file_name=file_name,file_mode="a",file_write="{0} ({1} * {2})/100 = {3}\n". format(ResultDialog,x,y,(x*y)/100))
       elif save_cfg == OFF:
           pass
+      elif save_cfg == AUTO:
+          file(file_name="history.txt",file_mode="a",file_write="{0} ({1} * {2})/100 = {3}\n". format(ResultDialog,x,y,(x*y)/100))
       else:
           error_msg(save_err_msg,"","")
 
@@ -68,6 +78,8 @@ def Mod(x,y,ResultDialog,save_cfg,file_name,save_err_msg):
         file(file_name=file_name,file_mode="a",file_write="{0} {1} % {2} = {3}\n". format(ResultDialog,x,y,x%y))
     elif save_cfg == OFF:
         pass
+    elif save_cfg == AUTO:
+        file(file_name="history.txt",file_mode="a",file_write="{0} {1} % {2} = {3}\n". format(ResultDialog,x,y,x%y))
     else:
         error_msg(save_err_msg,"","")
 
@@ -78,6 +90,8 @@ def FullDivision(x,y,ResultDialog,save_cfg,file_name,save_err_msg):
         file(file_name=file_name,file_mode="a",file_write="{0} {1} // {2} = {3}\n". format(ResultDialog,x,y,x//y))
     elif save_cfg == OFF:
         pass
+    elif save_cfg == AUTO:
+        file(file_name="history.txt",file_mode="a",file_write="{0} {1} // {2} = {3}\n". format(ResultDialog,x,y,x//y))
     else:
         error_msg(save_err_msg,"","")
 
@@ -88,6 +102,8 @@ def TakingExponents(x,y,ResultDialog,save_cfg,file_name,save_err_msg):
         file(file_name=file_name,file_mode="a",file_write="{0} {1} ** {2} = {3}\n". format(ResultDialog,x,y,x**y))
     elif save_cfg == OFF:
         pass
+    elif save_cfg == AUTO:
+        file(file_name="history.txt",file_mode="a",file_write="{0} {1} ** {2} = {3}\n". format(ResultDialog,x,y,x**y))
     else:
         error_msg(save_err_msg,"","")
 
@@ -95,9 +111,11 @@ def TakingRoots(x,y,ResultDialog,save_cfg,file_name,save_err_msg):
     print("{0} {1} / (1/{2}) = {3}". format(ResultDialog,x,y,x**(1/y)))
 
     if save_cfg == ON:
-        file(file_name=file_name,file_mode="a",file_write="{0} {1} - {2} = {3}\n". format(ResultDialog,x,y,x**(1/y)))
+        file(file_name=file_name,file_mode="a",file_write="{0} {1} / (1/{2}) = {3}\n". format(ResultDialog,x,y,x**(1/y)))
     elif save_cfg == OFF:
         pass
+    elif save_cfg == AUTO:
+        file(file_name="history.txt",file_mode="a",file_write="{0} {1} / (1/{2}) = {3}\n". format(ResultDialog,x,y,x**(1/y)))
     else:
         error_msg(save_err_msg,"","")
 
@@ -108,6 +126,8 @@ def SqaureRoot(x,ResultDialog,save_cfg,file_name,save_err_msg):
         file(file_name=file_name,file_mode="a",file_write="{0} {1} ** (1/2) {2} = {3}\n". format(ResultDialog,x,x**(1/2)))
     elif save_cfg == OFF:
         pass
+    elif save_cfg == AUTO:
+        file(file_name="history.txt",file_mode="a",file_write="{0} {1} ** (1/2) {2} = {3}\n". format(ResultDialog,x,x**(1/2)))
     else:
         error_msg(save_err_msg,"","")
 

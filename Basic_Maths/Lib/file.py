@@ -7,3 +7,4 @@ A Copy of This Software is published on GitHub To view: https://github.com/Linux
 
 ON=0
 OFF=1
+AUTO=2
