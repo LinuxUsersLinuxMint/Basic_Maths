@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """ Basic_Maths ile yapılmış bir örnek programdır. (Basic_Maths) kullanımına örnek olması amaçlı yazılmıştır.
-"basic_maths_calc.py" adlı dosyanın paylaşılmasına (internette blog/gönderi vs.) gönderilerinde paylaşılmasına @LinuxUsersLinuxMint tarafından izin verilmiştir.
+"test.py" adlı dosyanın paylaşılmasına (internette blog/gönderi vs.) gönderilerinde paylaşılmasına @LinuxUsersLinuxMint tarafından izin verilmiştir.
 It is a example program made with Basic_Maths. It was written to serve as an example of (Basic_Maths) usage.
-Sharing of the file named "basic_maths_calc.py" in posts (blog/post etc. on the internet) has been given permission by @LinuxUsersLinuxMint. """
+Sharing of the file named "test.py" in posts (blog/post etc. on the internet) has been given permission by @LinuxUsersLinuxMint. """
 
 from Basic_Maths.Basic_Maths import *
 
