@@ -29,7 +29,7 @@ Projeye dahil etme:
 ```Python
 #!/usr/bin/python3
 
-from Basic_Maths.Basic_Maths import *
+import basic_maths
 ```
 işte Basic_Maths kütüphanesini projenize dahil etmek bu kadar kolay.
 
@@ -44,6 +44,6 @@ Inclusion in the project:
 ```Python
 #!/usr/bin/python3
 
-from Basic_Maths.Basic_Maths import *
+import basic_maths
 ```
 That's how easy it is to include the Basic_Maths library in your project.
