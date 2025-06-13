@@ -1,6 +1,6 @@
 # Basic_Maths
 
-![License: GPL](https://img.shields.io/badge/License-GPL-blue.svg)    
+![License: GPL](https://img.shields.io/badge/License-GPL-blue.svg)
 ![Release Date](https://img.shields.io/badge/Release%20Date-2023--10--06-brightgreen)
 
 ---
