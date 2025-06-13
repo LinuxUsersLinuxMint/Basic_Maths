@@ -1,49 +1,43 @@
 # Basic_Maths
 
-Türkçe:
+![License: GPL](https://img.shields.io/badge/License-GPL-blue.svg)    
+![Release Date](https://img.shields.io/badge/Release%20Date-2023--10--06-brightgreen)
 
-* Python için matematiksel fonksiyonları tanımlar bu sayede daha kolay bir şekilde matematiksel işlemleri gerçekleştirebilirsiniz.
-* Önceden tanımlanmış matematiksel fonksiyonlar sayesinde yeniden tanımlamanıza gerek kalmaz bu sayede geliştirme sürecinizi kısaltır.
-* Önceden tanımlanmış matematiksel fonksiyonlar sayesinde hem daha az satır hem de anlaşılır bir kod yazmış olursunuz.
-* Sürekli güncel kalır bu sayede sürekli yeni özellikler eklenir ve hata varsa bunlar çözülür.
-* En iyi kullanıcı deneyiminiz için "Basic_Maths" kütüphanesinin her zaman en son sürümünü kullanınız.
+---
 
-English:
+**Basic_Maths** is a lightweight, minimal, and easy-to-use Python library designed for performing basic mathematical operations quickly and simply, without unnecessary complexity.
+> 📅 Release date: **October 3, 2023**   
+> 📦 Initial release: **Basic_Maths 1.2**   
+> 📦 Current version: **Basic_Maths 6.3**   
+> 📦 Next release: **Basic_Maths 6.5**   
+> ⏳ Next release status: **It's not under development...**   
+> 🛠️ Next release type: **Uncertain** 
 
-* Defines mathematical functions for Python so that you can perform mathematical operations more easily.
-* With predefined mathematical functions, you do not need to redefine them, thus shortening your development process.
-* Thanks to predefined mathematical functions, you will write both fewer lines and understandable code.
-* It is always up to date, so new features are constantly added and if there are bugs, they are solved.
-* Always use the latest version of the “Basic_Maths” library for the best user experience.
+---
 
-# How to use?
+## 🖥️ Features
 
-Türkçe:
+- ✅ Basic_Maths is an easy to use library with a simple syntax.
 
-Basic_Maths kütüphanesini projenize dahil etmek için öncelikle dikkat etmeniz gerekenler:
-* Basic_Maths kütüphanesini indirin ve çıkarma işlemini gerçekleştiriniz.
-* Ardından Basic_Maths klasörünü projenize taşıyınız.
+---
 
-Projeye dahil etme:
+## 📚 About
+ 
+📐 Basic_Maths is a library of mathematical functions for Python.  
+With this library, your mathematical operations become much easier, faster and easier to understand.  
+➕ Predefined functions prevent you from rewriting code, thus reducing your development time and simplifying your code.  
+🔄 The library is constantly updated; new features are added, existing bugs are quickly resolved.  
+🚀 For the best experience we always recommend using the latest version of **Basic_Maths**.
 
-```Python
+---
+
+## 🚀 How to Use?
+
+1. Download and extract the Basic_Maths library [from here](https://github.com/LinuxUsersLinuxMint/Basic_Maths/releases).  
+2. Move the `Basic_Maths` folder to your project directory.  
+3. Include it in your project as follows:
+
+```python
 #!/usr/bin/python3
 
 import basic_maths
-```
-işte Basic_Maths kütüphanesini projenize dahil etmek bu kadar kolay.
-
-English:
-
-To include the Basic_Maths library in your project, first things first:
-* Download the Basic_Maths library and extract it.
-* Then move the Basic_Maths folder to your project.
-
-Inclusion in the project:
-
-```Python
-#!/usr/bin/python3
-
-import basic_maths
-```
-That's how easy it is to include the Basic_Maths library in your project.
