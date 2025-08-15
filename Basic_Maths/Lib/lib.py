@@ -6,6 +6,6 @@ Bu Yazılımın Bir Kopyası GitHub da yayınlanmaktadır Görüntülemek için:
 A Copy of This Software is published on GitHub To view: https://github.com/LinuxUsersLinuxMint/Basic_Maths"""
 
 from math import *
-from PyAppDevKit.PyAppDevKit.pyappdevkit import *
+import pyappdevkit
 from Basic_Maths.lib_ver_info import *
 from Basic_Maths.library_func import *
