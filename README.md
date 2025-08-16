@@ -40,4 +40,4 @@ With this library, your mathematical operations become much easier, faster and e
 ```python
 #!/usr/bin/python3
 
-import basic_maths
+from Basic_Maths import *
