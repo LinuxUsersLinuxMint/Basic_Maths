@@ -8,8 +8,8 @@
 **Basic_Maths** is a lightweight, minimal, and easy-to-use Python library designed for performing basic mathematical operations quickly and simply, without unnecessary complexity.
 > 📅 Release date: **October 3, 2023**   
 > 📦 Initial release: **Basic_Maths 1.2**   
-> 📦 Current version: **Basic_Maths 6.5**   
-> 📦 Next release: **Basic_Maths 6.7**   
+> 📦 Current version: **Basic_Maths 6.7**   
+> 📦 Next release: **Basic_Maths 7.0**   
 > ⏳ Next release status: **It's not under development...**   
 > 🛠️ Next release type: **Uncertain** 
 

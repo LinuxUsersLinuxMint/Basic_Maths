@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "basic_maths"
-version = "6.5"
+version = "6.7"
 description = "Basic_Maths is a lightweight, minimal, and easy-to-use Python library designed for performing basic mathematical operations quickly and simply, without unnecessary complexity."
 readme = "README.md"
 license = { file = "LICENSE" }
