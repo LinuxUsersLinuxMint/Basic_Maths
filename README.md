@@ -33,7 +33,7 @@ With this library, your mathematical operations become much easier, faster and e
 
 ## 🚀 How to Use?
 
-1. Download and extract the Basic_Maths library [from here](https://github.com/LinuxUsersLinuxMint/Basic_Maths/releases).  
+1. Download and extract the Basic_Maths library [from here](https://github.com/LinuxUsersLinuxMint/LXLM-Basic_Maths/releases).  
 2. Move the `Basic_Maths` folder to your project directory.  
 3. Include it in your project as follows:
 
